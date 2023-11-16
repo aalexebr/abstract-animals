@@ -34,9 +34,17 @@ public class Main {
 		BirdArray[0] = e;
 		BirdArray[1] = p;
 		
+		ISwim[] MarineArray = new ISwim[2];
+		MarineArray[0] = d;
+		MarineArray[1] = shark1;
+		
+		
 		for(int x =0 ; x<BirdArray.length; x++) {
 			IFly bird = BirdArray[x];
 			makeFly(bird);
+			
+			ISwim waterAnimal = MarineArray[x];
+			makeSwim(waterAnimal);
 		}
 		
 		
@@ -44,6 +52,10 @@ public class Main {
 	
 	public static void makeFly(IFly animal) {
 		animal.fly();
+	}
+	
+	public static void makeSwim(ISwim animal) {
+		animal.swim();
 	}
 
 }
