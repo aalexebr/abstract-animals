@@ -33,7 +33,7 @@ public class Main {
 		Shark shark1 = new Shark("Fish", "carivore", "shark");
 //		shark1.eats("seals");
 //		
-//		e.makeFly(e);
+//		makeFly(e);
 		
 		final int LENGTH = 2;
 		
