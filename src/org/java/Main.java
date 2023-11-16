@@ -6,10 +6,11 @@ import org.java.pojo.Eagle;
 import org.java.pojo.Pigeon;
 import org.java.pojo.Shark;
 import org.java.pojo.abs.Animal;
+import org.java.pojo.abs.MainFunction;
 import org.java.pojo.inter.IFly;
 import org.java.pojo.inter.ISwim;
 
-public class Main {
+public class Main extends MainFunction{
 	public static void main(String[] args) {
 		
 		Dog dog = new Dog("mammal", "mammal", "dog");
@@ -57,12 +58,14 @@ public class Main {
 		
 	}
 	
-	public static void makeFly(IFly animal) {
-		animal.fly();
-	}
+//	functions are now in abstract class MainFunctions
 	
-	public static void makeSwim(ISwim animal) {
-		animal.swim();
-	}
+//	public static void makeFly(IFly animal) {
+//		animal.fly();
+//	}
+//	
+//	public static void makeSwim(ISwim animal) {
+//		animal.swim();
+//	}
 
 }
