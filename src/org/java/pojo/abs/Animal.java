@@ -2,21 +2,32 @@ package org.java.pojo.abs;
 
 public abstract class Animal {
 	
-	private String nourishment;
+	private String nutritionType;
+	private String className;
 	
-	public Animal(String nourishment) {
+	public Animal(String className, String nutritionType) {
 		
-		setNourishment(nourishment);
+		setNutritionType(nutritionType);
+		setClassName(className);
 	}
 	
 	public abstract void makeSound();
-
-	public String getNourishment() {
-		return nourishment;
+	
+	public String getClassName() {
+		return className;
 	}
 
-	public void setNourishment(String nourishment) {
-		this.nourishment = nourishment;
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+
+	public String getNutritionType() {
+		return nutritionType;
+	}
+
+	public void setNutritionType(String nutritionType) {
+		this.nutritionType = nutritionType;
 	}
 	
 	public void  sleep() {
@@ -24,15 +35,18 @@ public abstract class Animal {
 		System.out.println("ZzZ");
 	}
 	
-	public void eats() {
+	public void eats(String food) {
 		
-		System.out.println(getNourishment());
+		System.out.println("eats: "+food);
 	}
 	
-//	@Override
-//	public String toString() {
-//		// TODO Auto-generated method stub
-//		return ;
-//	}
+	@Override
+	public String toString() {
+		
+		return "Animal: \n"
+				+"class: "+getClassName()+"\n"
+				+"nutrition type: "+getNutritionType();
+				
+	}
 
 }

@@ -3,11 +3,11 @@ package org.java.pojo;
 import org.java.pojo.abs.Animal;
 import org.java.pojo.inter.IFly;
 
-public class Eagle extends Animal implements IFly{
+public class Pigeon extends Animal implements IFly{
 	
 	private String species;
 
-	public Eagle(String className,String nutritionType, String species) {
+	public Pigeon(String className,String nutritionType, String species) {
 		super(className,nutritionType);
 		setSpecies(species);
 	}

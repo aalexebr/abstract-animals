@@ -3,12 +3,12 @@ package org.java.pojo;
 import org.java.pojo.abs.Animal;
 import org.java.pojo.inter.ISwim;
 
-public class Dolphin extends Animal implements ISwim{
+public class Shark extends Animal implements ISwim{
 	
 	private String species;
 
-	public Dolphin(String className, String nutritionType, String species) {
-		super(className,nutritionType);
+	public Shark(String className, String nutritionType,  String species) {
+		super(className, nutritionType);
 		setSpecies(species);
 	}
 
@@ -28,7 +28,7 @@ public class Dolphin extends Animal implements ISwim{
 
 	@Override
 	public void makeSound() {
-		System.out.println("*sonar*");
+		System.out.println("sharks dont make sounds.");
 		
 	}
 
