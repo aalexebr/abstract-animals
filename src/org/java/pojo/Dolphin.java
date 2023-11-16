@@ -31,5 +31,12 @@ public class Dolphin extends Animal implements ISwim{
 		System.out.println("*sonar*");
 		
 	}
+	
+	
+	@Override
+	public void swim() {
+		System.out.println("swimming");
+		
+	}
 
 }

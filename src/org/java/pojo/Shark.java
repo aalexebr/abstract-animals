@@ -28,7 +28,15 @@ public class Shark extends Animal implements ISwim{
 
 	@Override
 	public void makeSound() {
-		System.out.println("sharks dont make sounds.");
+		System.out.println("sharks dont make sounds.They are silent killers");
+		
+	}
+	
+
+	
+	@Override
+	public void swim() {
+		System.out.println("swimming");
 		
 	}
 

@@ -38,10 +38,5 @@ public class Eagle extends Animal implements IFly{
 		
 	}
 
-	@Override
-	public void makeFly(IFly x) {
-		x.fly();
-		
-	}
 
 }

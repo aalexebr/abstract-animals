@@ -38,10 +38,5 @@ public class Pigeon extends Animal implements IFly{
 		
 	}
 
-	@Override
-	public void makeFly(IFly x) {
-		x.fly();
-		
-	}
 
 }
